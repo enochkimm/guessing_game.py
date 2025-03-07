@@ -19,13 +19,11 @@ additional_toppings_num = int(input("Enter number of additional toppings: "))
 toppings_cost = additional_toppings_num
 
 #delivery distance
-PRINT "Enter delivery distance (miles): "
-INPUT delivery_distance_miles
-IF delivery_distance <= 5 THEN
-    SET delivery_cost = 2
-ELSE 
-    SET delivery cost = 2 + (delivery_distance - 5)
-ENDIF
+delivery_distance_miles = int(input("Enter delivery distance (miles): "))
+if delivery_distance_miles <= 5:
+    delivery_cost = 2
+else:
+    delivery_cost = 2 + (delivery_distance_miles - 5)
 
 #calculate total cost
 SET total_cost = pizza_price + toppings_cost + delivery_cost
