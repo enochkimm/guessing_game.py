@@ -8,17 +8,11 @@ while True:
         break
     print("Please enter a valid pizza size.")
 
-PRINT "Enter pizza size (small or large): "
-INPUT pizza_size
-SET pizza_size = LOWERCASE(pizza_size)
-WHILE pizza_size != "small" and "pizza_size" != "large"
-
-#determine pizza base price and seeing if size is valid
-IF pizza_size == "small" THEN
-    SET pizza_price = 8
-ELSE pizza_slice == "large" THEN
-    SET pizza_price = 12
-ENDIF
+#determine pizza base price
+if pizza_size == "small":
+    pizza_price = 8
+else:
+    pizza_price = 12
 
 #get # of toppings
 PRINT "Enter number of additional toppings: "
