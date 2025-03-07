@@ -18,7 +18,7 @@ PRINT "Enter number of additional toppings: "
 INPUT additional_toppings_num
 SET toppings_cost = additional_toppings_num
 
-#delivert distance
+#delivery distance
 PRINT "Enter delivery distance (miles): "
 INPUT delivery_distance_miles
 IF delivery_distance <= 5 THEN
@@ -27,5 +27,10 @@ ELSE
     SET delivery cost = 2 + (delivery_distance - 5)
 ENDIF
 
+#calculate total cost
+SET total_cost = pizza_price + toppings_cost + delivery_cost
+
+#print message of total cost
+PRINT f"Your total is ${total_cost}."
 
 
