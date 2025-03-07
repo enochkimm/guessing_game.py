@@ -26,9 +26,9 @@ else:
     delivery_cost = 2 + (delivery_distance_miles - 5)
 
 #calculate total cost
-SET total_cost = pizza_price + toppings_cost + delivery_cost
+total_cost = pizza_price + toppings_cost + delivery_cost
 
 #print message of total cost
-PRINT f"Your total is ${total_cost}."
+print(f"Your total is ${total_cost}.")
 
 
