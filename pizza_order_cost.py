@@ -1,6 +1,13 @@
-PRINT "Welcome to Enoch's Pizza!"
+#welcome message
+print("Welcome to Enoch's Pizza!")
 
 #input pizza size
+while True:
+    pizza_size = input("Enter pizza size (small or large): ").lower()
+    if pizza_size in ["small", "large"]:
+        break
+    print("Please enter a valid pizza size.")
+
 PRINT "Enter pizza size (small or large): "
 INPUT pizza_size
 SET pizza_size = LOWERCASE(pizza_size)
