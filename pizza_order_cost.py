@@ -15,9 +15,8 @@ else:
     pizza_price = 12
 
 #get # of toppings
-PRINT "Enter number of additional toppings: "
-INPUT additional_toppings_num
-SET toppings_cost = additional_toppings_num
+additional_toppings_num = int(input("Enter number of additional toppings: "))
+toppings_cost = additional_toppings_num
 
 #delivery distance
 PRINT "Enter delivery distance (miles): "
