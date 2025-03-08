@@ -9,11 +9,12 @@ user_guess = 0
 
 # main game
 while guesses_left > 0:
-
-    #prompt user guess
-    DISPLAY "Enter your guess (1-10):"
-    GET user input and CONVERT to integer
-    STORE input in user_guess
+    user_guess = input("Enter your guess (1-10): ")
+    if user_guess.isdigit():
+        user_guess = int(user_guess)
+    else:
+        print("Please enter a valid number")
+        continue
 
     #compare user_guess with secret_number
     IF user_guess is equal to secret_number THEN
