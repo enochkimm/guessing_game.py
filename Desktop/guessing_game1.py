@@ -25,7 +25,7 @@ while guesses_left > 0:
         print("Too low!")
 
     #reduce attempts and check for remaining guesses
-    DECREASE guesses_left by 1
+    guesses_left -= 1
 
-    IF guesses_left is equal to 0 THEN
-        DISPLAY "Game over! The number was __! Thanks for playing!"
+    if guesses_left == 0:
+        print(f"Game over! The number was {secret_number}.")
