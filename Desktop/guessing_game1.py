@@ -16,18 +16,13 @@ while guesses_left > 0:
         print("Please enter a valid number")
         continue
 
-    #compare user_guess with secret_number
-    IF user_guess is equal to secret_number THEN
-        DISPLAY "Congratulations! Your guess of __ was correct!"
-        EXIT the LookupError
-    
-    ELSE IF user_guess is greater than secret_number THEN
-        Display "Too high! Try again."
-
-    ELSE 
-        DISPLAY "Too low! Try again."
-
-    ENDIF 
+    if user_guess == secret_number:
+        print(f"Congrats! Your guess {user_guess} was correct!")
+        break
+    elif user_guess > secret_number: 
+        print("Too high!")
+    else:
+        print("Too low!")
 
     #reduce attempts and check for remaining guesses
     DECREASE guesses_left by 1
