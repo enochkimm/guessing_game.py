@@ -1,14 +1,14 @@
-IMPORT the random module
+import random
 
 #generate random num 1-10
-SET secret_number TO random int between 1 and 10
+secret_number = random.randint(1,10)
 
 # set guesses
-SET guesses_left to %
-SET user_guess to 0
+guesses_left = 5
+user_guess = 0
 
 # main game
-WHILE guesses_left is greater than 0 DO:
+while guesses_left > 0:
 
     #prompt user guess
     DISPLAY "Enter your guess (1-10):"
