@@ -1,5 +1,8 @@
 IMPORT the random module
 
+#generate random num 1-10
+SET secret_number TO random int between 1 and 10
+
 # set guesses
 SET guesses_left to %
 SET user_guess to 0
